@@ -1,11 +1,3 @@
-			预处理指令
-#regin 折叠代码 	#endregin
-#define 	定义条件的预处理指令(指令名称大写)	
-#if 条件判断预处理指令 #else #elif  #endif
-#undef	取消条件的预处理指令
-#error （错误信息）错误信息预处理指令
-#warning（警告信息）警告信息预处理指令
-#line	行预处理指令
 
 
 			常用特性
