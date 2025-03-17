@@ -1,0 +1,38 @@
+			预处理指令
+#regin 折叠代码 	#endregin
+#define 	定义条件的预处理指令(指令名称大写)	
+#if 条件判断预处理指令 #else #elif  #endif
+#undef	取消条件的预处理指令
+#error （错误信息）错误信息预处理指令
+#warning（警告信息）警告信息预处理指令
+#line	行预处理指令
+
+
+			常用特性
+[Header(string)]  给inspector面板显示的字段加一个描述
+[Tooltip(string)]  在inspector面板上停留显示字段
+[Space(float)]  给面板增加垂直空间
+[Range(float min,float max)]  限制数值变量的取值范围，并以滑动条的形式显示在inspector
+[Min(float)]  限制一个float的最小值
+[AddComponentMenu(string)]  进行脚本的分类和组织
+[ColorUsage(bool,bool)]  指定颜色字段
+[ContextMenu(string)]  在inspector窗口为组件或脚本添加上下文
+[ContextMenuItem(string,string)]  在inspector窗口为字段或属性添加上下文
+[CreateAssetMenu()]  在Unity编译器中为脚本创建自定义资源菜单
+[Delayed]  之道用户按Enter或将焦点字段移开就，该字段才会返回新值
+[DisallowMultipleComponent]  Unity 将确保在同一 GameObject 上只能添加一个该脚本类型
+[ExecuteInEditMode]  确保它们在编辑模式下也会执行
+[HelpURL(string)] 为类提供自定义文档 URL，按Ctrl键点击可跳转到链接。
+[HideInInspector]  将字段隐藏在 Inspector 窗口中
+[Multiline(int)]  告诉 Inspector 窗口该字段可以显示多行文本输入框
+[RequireComponent(Type)]  确保特定类型的组件在同一 GameObject 上一起存在
+[RuntimeInitializeOnLoadMethod]  标记静态方法，在 Unity 运行时初始化时自动调用
+[SerializeField]  一个字段或属性时，它将允许访问并编辑它
+[SpineAnimation]  允许从SkeletonAnimation中选择Spine动画名称的检查器下拉列表
+
+[Serializable]  在 Inspector 中显示并且可以序列化
+[NonSerialized]  不应该被序列化，并且不会在Inspector面板上出现
+[MenuItem(string]  添加自定义菜单项
+[InitializeOnLoadMethod]  重新编译项目中的脚本时，会调用带有此特性的静态方法
+
+
